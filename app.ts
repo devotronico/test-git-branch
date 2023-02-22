@@ -1,5 +1,7 @@
-export type StatusCode = number;
+import { HttpStatusCode } from 'axios';
 
-const code = 200 as StatusCode;
+export type StatusCode = `${HttpStatusCode}`;
+
+const code = '200' as StatusCode;
 
 console.log(code);
