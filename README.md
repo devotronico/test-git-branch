@@ -1,10 +1,7 @@
-- 1
-- 2
-- 2.1
-- 2.2
-- 3
-- 4
-- 5
-- 6
-- 77777
-- 8888
+import { HttpStatusCode } from 'axios';
+
+export type StatusCode = `${HttpStatusCode}`;
+
+const code = 200 as StatusCode;
+
+console.log(code);
